@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Explore</h2>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search for a location"
+        style="width: 300px; padding: 10px; margin-bottom: 10px"
+      />
+      <button onclick="searchLocation()" style="padding: 10px">Search</button>
+      <br />
+      <input
+        id="start-input"
+        type="text"
+        placeholder="Start location"
+        style="width: 300px; padding: 10px; margin-bottom: 10px"
+      />
+      <input
+        id="end-input"
+        type="text"
+        placeholder="End location"
+        style="width: 300px; padding: 10px; margin-bottom: 10px"
+      />
+      <button onclick="calculateRoute()" style="padding: 10px">
+        Get Directions
+      </button>
+      <div id="map" style="height: 500px; width: 100%"></div>
+    </div>
+    <script src="explore.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHflJIZhcHX2WzvZs2MxoNRyIhB5lbUOI&callback=initMap&libraries=places"
+      async
+    ></script>
+  </body>
+</html>

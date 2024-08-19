@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HELMET</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a2d3e1ef1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top-section">
+        <img class="logo" src="photos/1.jpg" alt="HELMET" />
+        <img
+          class="logo2"
+          src="photos/1.jpg"
+          alt="Pitch and Invest Icon"
+          style="height: 1rem; margin-right: 0.5em"
+        />
+        <div class="link">
+          <img src="photos/home.png" alt="Home Icon" />
+          <a href="#">Home</a>
+        </div>
+        <div class="link">
+          <img src="photos/search_icon.png" alt="Search Icon" />
+          <a href="#" id="search-link">Search</a>
+        </div>
+        <!-- Assuming your main HTML file is something like index.html -->
+        <div class="link">
+          <img src="photos/explore.png" alt="Explore Icon" />
+          <a href="#" id="explore-link">Explore</a>
+        </div>
+        <div class="link">
+          <img src="photos/messenger.png" alt="Messenger" />
+          <a href="#" id="messenger-link">Messenger</a>
+        </div>
+        <div class="bottom-section"></div>
+        <div class="link">
+          <img src="photos/menu_icon.png" alt="Profile" />
+          <a href="profile.html" id="Profile">Profile</a>
+        </div>
+        <div class="link">
+          <img src="photos/icons8-bike-80.png" alt="Tracking" />
+          <a href="tracking.html">Tracking</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="top-row">
+        <div class="search-container" id="search-container">
+          <input type="text" id="search-bar" placeholder="Search..." />
+        </div>
+        <button id="bluetooth-connect">Connect Bluetooth</button>
+        <div class="product-grid"></div>
+        <div class="music-player">
+          <audio id="music-player" controls>
+            <source src="path/to/your-music-file.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="product">
+          <img src="photos/1.jpg" alt="Product 1 " />
+          <h3>Product 1</h3>
+          <p>$100.00</p>
+          <button onclick="window.open('payment.html', '_blank')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="photos/4.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <p>$150.00</p>
+          <button onclick="window.open('payment.html', '_blank')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="photos/3.jpg" alt="Product 3" />
+          <h3>Product 3</h3>
+          <p>$200.00</p>
+          <button onclick="window.open('payment.html', '_blank')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product">
+          <img src="photos/2.jpg" alt="Product 4" />
+          <h3>Product 4</h3>
+          <p>$250.00</p>
+          <button onclick="window.open('payment.html', '_blank')">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bluetooth.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
+
+
